@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poiret One", cursive;
+}
+
+body {
+    background: linear-gradient(yellow, orange);
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    width: fit-content;
+    min-height: 20%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.clock h1 {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 5rem;
+}
+
+#day {
+    color: red;
+}
+
+#hour {
+    color: blue;
+}
+
+#min {
+    color: purple;
+}
+
+#sec {
+    color: black;
+}
+
+#ampm {
+    color: indigo;
+}
+
+@media (max-width: 480px) {
+    .clock {
+        font-size: 4rem;
+    }
+}
